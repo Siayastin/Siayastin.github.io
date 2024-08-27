@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зустріч з компанією АМС буд</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+        p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .highlight {
+            background-color: #d8dff0;
+            padding: 10px;
+            border-left: 4px solid #3c5376;
+            margin: 20px 0;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .checkbox-container label {
+            margin: 0;
+        }
+        .bold {
+            font-weight: bold;
+        }
+.top-left-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .top-left-button:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            min-height: 150vh; /* Встановлює мінімальну висоту сторінки, щоб з'явився скрол */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .bottom-center-button-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        .bottom-center-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .bottom-center-button:hover {
+            background-color: #218838;
+        }
+
+    </style>
+
+    <script>
+        function toggleBold(checkbox) {
+            const label = checkbox.nextElementSibling;
+            if (checkbox.checked) {
+                label.classList.add('bold');
+            } else {
+                label.classList.remove('bold');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Дякую що приєдналися до нашої зустрічі!</h1>
+        <p class="highlight">Прохання - слідкувати за своїми камерами, впродовж співбесіди їх не відключати, а також слідкувати за мікрофонами, включаєте їх тоді коли до Вас звертаються.</p>
+
+        <h2>Компанія називається АМС буд</h2>
+        <p>Трішки розкажу про неї:</p>
+        <p>Компанія заснована в 2014 році і співпрацює з кількома напрямками:</p>
+        <ul>
+            <li>Робота з торговими мережами: супермаркети або різноманітні площі, які ми ремонтуємо.</li>
+            <li>Працюємо з державними підприємствами: бюджетні закупівлі, тендери.</li>
+            <li>Співпраця з виробництвами такими як КНАУФ, КОНТІ, Наша Ряба та інші.</li>
+            <li>Співпраця з благодійними фондами щодо відновлення садочків, супермаркетів та різних площ.</li>
+            <li>Будівництво ангарів та складів.</li>
+        </ul>
+
+        <p>У звʼязку з великим розширенням компанії нам потрібно декілька помічників в відділ продажу. Саме тому вас так і багато.</p>
+        <p><strong>Від себе хочу сказати, що відділ продажу у нас самий елітний, йому підкоряються майже всі.</strong></p>
+        <p>Сьогодні в нас буде ознайомлювальний тур: ви подивитесь на нас, ми на вас.</p>
+        <p>Далі буде другий тур, на якому ми ближче з вами познайомимось.</p>
+        <p>Після другого туру буде тиждень безкоштовного навчання, щоб ви поринули в робочу атмосферу, зрозуміли суть роботи нашої компанії та свої обовʼязки.</p>
+        <p>Після безкоштовного навчання у нас буде місяць платного стажування, за яке ви вже будете отримувати кошти.</p>
+
+        <h2>Питання до вас:</h2>
+        <p>Попрошу кожного розказати:</p>
+        <ul>
+            <li>Прізвище, імʼя, місто.</li>
+            <li>Скільки років, сімейний стан.</li>
+            <li>Якщо переїхали - звідки і куди.</li>
+            <li>Останні 2-3 місця роботи і які обов'язки та функції виконували.</li>
+            <li>Яку користь ви можете принести нашій компанії.</li>
+        </ul>
+
+        <p>Наступне запитання:</p>
+        <ul>
+            <li>Розкажіть про свої слабкі і сильні сторони, що стосується робочих процесів.</li>
+            <li>Що любите робити, що не любите.</li>
+            <li>Прохання відповісти відкрито, щоб ви не робили роботу, яка вам не до вподоби.</li>
+        </ul>
+
+        <p>І моє останнє питання:</p>
+        <ul>
+            <li>Як ви відноситеся до надмірних навантажень, яких іноді може вимагати робота?</li>
+        </ul>
+
+        <h2>Інші питання:</h2>
+        <div class="checkbox-container">
+            <input type="checkbox" id="salary" onchange="toggleBold(this)">
+            <label for="salary">Зарплата - це питання другого туру.</label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="schedule" onchange="toggleBold(this)">
+            <label for="schedule">Графік: Понеділок-пʼятниця з 9 до 6.</label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="duties" onchange="toggleBold(this)">
+            <label for="duties">Обовʼязки - завдяки навчанню ви як раз і зрозумієте, які обов'язки будуть входити в вашу роботу. Це будуть дзвінки (тепла/холодна база), написання КП, можливо, якісь доручення від старшого менеджера.</label>
+        </div>
+        <p>В мене більше питань немає, можливо є в когось з колег. Передаю слово Сніжані.</p>
+    </div>
+<button class="top-left-button""btn-primary" onclick="window.location.href='index.html'">Назад</button>
+    <div class="bottom-center-button-container">
+        <button class="bottom-center-button""btn-secondary" onclick="window.location.href='page1.2.html'">2-ий тур помічник менеджера</button>
+    </div>
+</body>
+</html>
+
