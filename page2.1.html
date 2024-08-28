@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-ий тур "помічник керівника"</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #444;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 4px solid #007BFF;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .top-left-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .top-left-button:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            min-height: 150vh; /* Встановлює мінімальну висоту сторінки, щоб з'явився скрол */
+            padding: 20px;
+            text-align: center;
+        }
+        .bottom-center-button-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+        .bottom-center-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .bottom-center-button:hover {
+            background-color: #218838;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .checkbox-container label {
+            margin: 0;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function toggleBold(checkbox) {
+            const label = checkbox.nextElementSibling;
+            if (checkbox.checked) {
+                label.classList.add("bold");
+            } else {
+                label.classList.remove("bold");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Доброго дня</h1>
+        <p>Дякую що приєдналися до нашої зустрічі!</p>
+        <p>Прохання - слідкувати за своїми камерами, впродовж співбесіди їх не відключати, а також слідкувати за мікрофонами, включаєте їх тоді коли до Вас звертаються.</p>
+
+        <p>Сьогодні співбесіду проведе моя колега <span class="highlight">(Ім’я)</span>. Вам слово, <span class="highlight">(Ім’я)</span>!</p>
+
+        <h2>Ми компанія “АМС БУД”</h2>
+        <p>Трішки розкажу про нашу компанію</p>
+        <ul>
+            <li>Компанія заснована в 2014 році і співпрацює з кількома напрямками</li>
+            <li>Це робота з торговими мережами: супермаркети або різноманітні площі які ми ремонтуємо.</li>
+            <li>Працюємо з державними підприємствами, це бюджетні закупівлі, тендери.</li>
+            <li>Також працюємо з виробництвами такими як КНАУФ, КОНТІ, наша ряба та інші виробництва.</li>
+            <li>Співпрацюємо з благодійними фондами щодо відновлення садочків, супермаркетів та різних площ.</li>
+            <li>Останній наш напрямок - це будівництво ангарів та складів.</li>
+        </ul>
+
+        <p>У звʼязку з великим розширенням компанії нам потрібно декілька помічників в відділи найму, виробничий відділ та відділ продажу. Саме тому вас так і багато.</p>
+
+        <p>Сьогодні в нас буде ознайомлювальний тур: ви подивитесь на нас, ми подивимось на вас.</p>
+        <p>Далі буде 2-ий тур, на якому ми вже ближче з вами познайомимось.</p>
+
+        <p>Після 2-го туру буде тиждень безкоштовного навчання, щоб ви поринули в робочу атмосферу, зрозуміли суть роботи нашої компанії та свої обовʼязки.</p>
+        <p>Після безкоштовного навчання в нас буде місяць платного стажування, за яке ви вже будете отримувати кошти.</p>
+
+        <h2>Кар'єрний ріст</h2>
+        <p>Хочу ще нагадати, що в нашій компанії практикується кар'єрний ріст (вертикальний та горизонтальний).</p>
+        <p>Ми цінуємо кожного працівника, тому якщо ви будете проявляти ініціативу та показувати гарний результат, ви будете нагороджені матеріально, а також якщо вам не подобатиметься у цьому відділі, то ми зможемо запропонувати перейти в інший відділ.</p>
+        <p>(Можу навести приклад по собі: я також проходила 1-ий, 2-ий тур, навчання на посаду помічника менеджера у відділ продажів. Але холодні дзвінки - то не моє, тому змогла перейти у відділ найму помічником керівника.)</p>
+
+        <h2>Головні пункти в нашій компанії</h2>
+        <ul>
+            <li>Відкритість</li>
+            <li>Відвертість</li>
+            <li>Чесність</li>
+            <li>Робота на результат</li>
+        </ul>
+
+        <h2>Попрошу кожного розказати:</h2>
+        <ul>
+            <li>Прізвище, ім'я, з якого ви міста, скільки років, сімейний стан, якщо переїхали, то звідки і куди.</li>
+            <li>Коротко 2-3 місця останньої роботи і які обов'язки та функції ви виконували.</li>
+            <li>Обов'язково додайте, яку користь ви можете принести нашій компанії.</li>
+        </ul>
+
+        <h2>Питання:</h2>
+        <ul>
+            <li>Розкажіть про свої слабкі та сильні сторони, що любите робити, що не любите, і прохання відповісти відкрито, щоб потім ви не виконували роботу, яка вам не до вподоби.</li>
+            <li>Як ви відноситеся до надмірних навантажень, яких іноді може вимагати робота?</li>
+        </ul>
+        <p>В мене більше питань немає, можливо будуть у вас питання!</p>
+
+        <h2>Додаткова інформація:</h2>
+        <div class="checkbox-container">
+            <input type="checkbox" id="salary" onchange="toggleBold(this)">
+            <label for="salary">Зарплата - це питання другого туру.</label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="schedule" onchange="toggleBold(this)">
+            <label for="schedule">Графік: Понеділок-пʼятниця з 9 до 6.</label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="duties" onchange="toggleBold(this)">
+            <label for="duties">Обовʼязки - завдяки навчанню ви як раз і зрозумієте, які обов'язки будуть входити в вашу роботу. Це будуть дзвінки (тепла/холодна база), написання КП, можливо, якісь доручення від старшого менеджера.</label>
+        </div>
+
+        <p>В мене більше питань немає, можливо є у когось з колег.</p>
+        <p>Передаю слово Сніжані.</p>
+    </div>
+    <button class="top-left-button" onclick="window.location.href='index.html'">Назад</button>
+
+    <div class="bottom-center-button-container">
+        <button class="bottom-center-button" onclick="window.location.href='page2.2.html'">2-ий тур "помічник керівника"</button>
+    </div>
+</body>
+</html>
+
